@@ -1,0 +1,97 @@
+.heroDIV {
+  background-image: url("C:\Users\HP\Desktop\my portfolio\my\src\images\bghero.svg");
+  height: 100vh;
+  width: 100%;
+}
+.navCON {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  /* height: 70px; */
+  padding: 15px 30px;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  backface-visibility: hidden;
+  transform: translateZ(0px);
+  border-bottom: 0.05px solid rgb(198, 198, 198);
+}
+.navleft {
+  color: #343434;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 108.684%; /* 26.084px */
+  letter-spacing: -1.08px;
+  text-transform: uppercase;
+}
+.rightnavoptions {
+  text-decoration: none;
+  color: #343434;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 108.684%; /* 21.737px */
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+}
+.contactbtn {
+  padding: 10px 12px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 20px;
+  background: #1f1f1f;
+  color: #fff;
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 108.684%; /* 21.737px */
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+}
+.navright {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.herotxt {
+  padding-left: 30px;
+  padding-top: 25%;
+}
+.herotext1 {
+  color: #343434;
+  font-family: "Playfair Display";
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 108.684%; /* 139.115px */
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+}
+.herotext2 {
+  color: #343434;
+  font-family: "Playfair Display";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 108.684%; /* 76.079px */
+  letter-spacing: -2.8px;
+  text-transform: uppercase;
+}
+.herotext3 {
+  padding-left: 9px;
+  display: flex;
+  gap: 10px;
+  color: #343434;
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.1px;
+}
