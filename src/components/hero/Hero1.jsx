@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hero.css";
+import "./Hero1.css";
 import bg from "../../assets/bghero.svg";
 
 export default function Hero1() {
