@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 import bg from "../../assets/bghero.svg";
 
-export default function Hero() {
+export default function Hero1() {
   return (
     <div className="heroDIV">
       <img className="bgimg" src={bg} alt="" />
