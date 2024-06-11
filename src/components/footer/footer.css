@@ -1,0 +1,73 @@
+.footerMain {
+  margin-top: 70px;
+}
+.footerBgImg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  /* height: auto; */
+  object-fit: cover;
+  z-index: -1;
+}
+.textAlongScroller {
+  font-family: "Roboto Slab";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 63.3px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  color: rgba(218, 183, 216, 1);
+}
+.textAboveLinks {
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26.38px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  color: rgba(218, 183, 216, 1);
+  width: 400px;
+  margin-bottom: 20px;
+}
+.footerBottom1 {
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21.74px;
+  letter-spacing: -0.04em;
+  color: rgba(218, 183, 216, 1);
+  display: flex;
+  gap: 20px;
+}
+.footerBottom2 {
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.62px;
+  text-align: left;
+  color: rgba(177, 164, 176, 1);
+}
+.footerMain a {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  padding-bottom: 5px;
+}
+
+.footerMain a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6px;
+  background: url("../../assets/workAboutLine.svg") repeat-x;
+  background-size: contain;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.footerMain a:hover::after {
+  transform: scaleX(1);
+}

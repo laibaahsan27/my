@@ -1,11 +1,11 @@
 import React from "react";
-import "./hero.css";
-// import bg from "../../images/bghero.svg";
+import "./Hero.css";
+import bg from "../../assets/bghero.svg";
 
-export default function hero() {
+export default function Hero() {
   return (
     <div className="heroDIV">
-       {/* <img className='bgimg' src={bg} alt="" /> */}
+      <img className="bgimg" src={bg} alt="" />
       <nav className="navCON">
         <div className="navleft">laiba ahsan</div>
         <div className="navright">
@@ -16,7 +16,7 @@ export default function hero() {
             about
           </a>
           <a href="">
-            <button className="contactbtn">contact</button>
+            <button className="contactbtn cssbuttons">contact</button>
           </a>
         </div>
       </nav>
