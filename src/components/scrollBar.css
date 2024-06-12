@@ -44,10 +44,16 @@
     font-size: 26px;
   }
   .marquee {
-    height: 50px;
+    height: 60px;
   }
   .marquee__image {
     margin-top: 5px;
+  }
+  .marquee__inner {
+    padding-top: 0px;
+    animation: marquee 30s linear infinite;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {

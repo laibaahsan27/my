@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import BG from "../../assets/footerBg.svg";
+import footerFlower from "../../assets/footerFlower.svg";
 import workAboutLine from "../../assets/sanyaLine.svg";
 import GetInTouch from "../../assets/getintouch.svg";
 import linkedin from "../../assets/linkedin.svg";
@@ -19,25 +20,28 @@ export default function footer() {
         backgroundPosition: "center",
       }}
     >
-      <div
-        style={
-          {
-            // display: "flex",
-          }
-        }
-      >
+      <div>
         <div
-          style={{
-            paddingTop: "80px",
-            paddingLeft: "35px",
-          }}
+          className="footerTop"
+          // style={{
+          //   paddingTop: "80px",
+          //   paddingLeft: "35px",
+          // }}
         >
+          <div className="footerFlower">
+            {" "}
+            <img src={footerFlower} alt="" />
+          </div>
+
           <div className="textAlongScroller">Mastering,</div>
           <div
-            style={{
-              paddingTop: "15px",
-              width: "130%",
-            }}
+            className="scroolerDiv"
+            style={
+              {
+                // paddingTop: "15px",
+                // width: "130%",
+              }
+            }
           >
             <Bar />
           </div>
@@ -53,19 +57,25 @@ export default function footer() {
         </div>
       </div>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          paddingLeft: "35px",
-          marginTop: "140px",
-          marginBottom: "80px",
-        }}
+        className="footerMid"
+        style={
+          {
+            // display: "flex",
+            // justifyContent: "space-between",
+            // paddingLeft: "35px",
+            // marginTop: "140px",
+            // marginBottom: "80px",
+          }
+        }
       >
-        <img src={GetInTouch} alt="" />
+        <img src={GetInTouch} alt="" className="gentintouchImg" />
         <div
-          style={{
-            paddingRight: "10%",
-          }}
+          className="footerMidSec"
+          style={
+            {
+              // paddingRight: "10%",
+            }
+          }
         >
           <div className="textAboveLinks">
             Feel free to get in touch with me for any development needs or
@@ -103,12 +113,13 @@ export default function footer() {
         </div>
       </div>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          borderTop: "1px solid white",
-          padding: "20px 35px",
-        }}
+        className="footerBottom"
+        // style={{
+        //   display: "flex",
+        //   justifyContent: "space-between",
+        //   borderTop: "1px solid white",
+        //   padding: "20px 35px",
+        // }}
       >
         <div className="footerBottom1">
           <a href="#work" className="wavy-link">
@@ -119,9 +130,10 @@ export default function footer() {
           </a>
         </div>
         <div className="footerBottom2">
-          © 2023 Laiba Ahsan. All rights reserved.
+          © 2023 Laiba Ahsan.{" "}
+          <span className="rightsRe">All rights reserved.</span>
         </div>
-        <div className="footerBottom1">
+        <div className="footerBottom3">
           Designed by sanya{" "}
           <img src={heart} alt="" style={{ height: "20px" }} />
         </div>

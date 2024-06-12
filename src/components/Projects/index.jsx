@@ -6,6 +6,14 @@ import JM from "../../assets/projects/JM.svg";
 import PartyPals from "../../assets/projects/PartyPals.svg";
 import Prateek from "../../assets/projects/Prateek.svg";
 import Quatro from "../../assets/projects/quatro.svg";
+
+import DailyCastPhone from "../../assets/projects/DailyCastPhone.svg";
+import Drphone from "../../assets/projects/Drphone.svg";
+import JMphone from "../../assets/projects/JMphone.svg";
+import PartyPalsphone from "../../assets/projects/PartyPalsphone.svg";
+import Prateekphone from "../../assets/projects/Prateekphone.svg";
+import quatrophone from "../../assets/projects/quatrophone.svg";
+
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 export default function Projects() {
@@ -18,6 +26,7 @@ export default function Projects() {
       tech: "MERN, CSS, Material UI",
       link: "https://fuel-ed.vercel.app/",
       image: PartyPals,
+      imagePhn: PartyPalsphone,
       bgColor:
         "radial-gradient(85.45% 85.45% at 50% 50%, #E3E8DF 0%, #626E5F 100%)",
       type: "Service",
@@ -28,6 +37,7 @@ export default function Projects() {
       tech: "Next.js, MongoDB, Express.js, Node.js, Material UI, CSS ",
       link: "https://dr-sandy.vercel.app/",
       image: Dr,
+      imagePhn: Drphone,
       bgColor:
         "radial-gradient(85.45% 85.45% at 50% 50%, #FFE2E9 0%, #AE0345 100%)",
       type: "Service",
@@ -38,6 +48,7 @@ export default function Projects() {
       tech: "HTML, CSS, JavaScript",
       link: "https://www.jagritimalhotra.com/",
       image: JM,
+      imagePhn: JMphone,
       bgColor:
         "radial-gradient(85.45% 85.45% at 50% 50%, #E1E1E1 0%, #8C0010 100%)",
       type: "Portfolio",
@@ -48,6 +59,7 @@ export default function Projects() {
       tech: "React.js, CSS",
       link: "https://www.quatro.in/",
       image: Quatro,
+      imagePhn: quatrophone,
       bgColor:
         "radial-gradient(85.45% 85.45% at 50% 50%, #7D7D7D 0%, #000000 100%)",
       type: "Business",
@@ -58,6 +70,7 @@ export default function Projects() {
       tech: "React.js, CSS",
       link: "https://my-app-six-inky.vercel.app/",
       image: Prateek,
+      imagePhn: Prateekphone,
       bgColor:
         "radial-gradient(85.45% 85.45% at 50% 50%, #A0B5C2 0%, #001E67 100%)",
       type: "Portfolio",
@@ -68,6 +81,7 @@ export default function Projects() {
       tech: "React.js , CSS, API Integration",
       link: "https://weather-sooty-tau.vercel.app/",
       image: DailyCast,
+      imagePhn: DailyCastPhone,
       bgColor:
         "radial-gradient(85.45% 85.45% at 50% 50%, #A0B5C2 0%, #1E6085 100%)",
       type: "Utility",
@@ -83,31 +97,64 @@ export default function Projects() {
         display: "flex",
         pt: 10,
         pb: 10,
+        flexDirection: { lg: "row", md: "column", sm: "column", xs: "column" },
       }}
     >
+      <Typography
+        sx={{
+          fontFamily: "Playfair Display",
+          fontSize: { md: "100px", xs: "64px" },
+          fontWeight: 700,
+          pb: 3,
+          margin: "0 auto",
+          marginBottom: "20px",
+          display: { lg: "none", md: "flex" },
+        }}
+      >
+        PROJECTS
+      </Typography>
       <Box
         sx={{
-          width: "50%",
-          height: "600px",
-          borderRadius: "0px 44px 44px 0px",
+          width: { lg: "50%", md: "90%", sm: "90%", xs: "90%" },
+          margin: { lg: "0", md: "0 auto", sm: "0 auto", xs: "0 auto" },
+          height: { lg: "600px", md: "500px", sm: "400px", xs: "200px" },
+          borderRadius: {
+            lg: "0px 44px 44px 0px",
+            md: "44px",
+            sm: "44px",
+            xs: "13px",
+          },
           background: selected.bgColor,
-          boxShadow: "0px 36px 55px 0px rgba(0, 0, 0, 0.25)",
+          boxShadow: {
+            lg: "0px 36px 55px 0px rgba(0, 0, 0, 0.25)",
+            xs: "none",
+          },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
         <img
-          src={selected.image}
+          src={window.innerWidth < 768 ? selected.imagePhn : selected.image}
           alt=""
-          style={{ width: "679px", height: "311px" }}
+          style={{
+            width: "90%",
+            height: "auto",
+            maxWidth: "679px",
+            maxHeight: "311px",
+          }}
         />
       </Box>
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
-          pl: "7%",
+          // pl: { lg: "7%", md: "0%" },
+          // width: "100%",
+          // justifyContent: "center",
+          // margin: { lg: "0 auto", md: "0" },
+          margin: { lg: "0 50px", md: "0" },
+          justifyContent: "center",
         }}
       >
         <Typography
@@ -116,17 +163,19 @@ export default function Projects() {
             fontSize: "100px",
             fontWeight: 700,
             pb: 3,
+            display: { lg: "flex", md: "none", sm: "none", xs: "none" },
           }}
         >
           PROJECTS
         </Typography>
         <Box
           sx={{
-            maxHeight: "400px",
+            marginTop: { lg: "0", md: "100px", sm: "100px", xs: "50px" },
+            maxHeight: { lg: "450px", md: "auto" },
             overflowY: "auto",
-            scrollbarWidth: "none" /* Firefox */,
+            scrollbarWidth: "none",
             "&::-webkit-scrollbar": {
-              display: "none" /* Chrome, Safari, and Opera */,
+              display: "none",
             },
           }}
         >
@@ -135,9 +184,14 @@ export default function Projects() {
               key={project.id}
               sx={{
                 borderBottom: "1px solid black",
-                width: "80%",
                 pb: 1,
                 cursor: "pointer",
+                padding: {
+                  lg: "0",
+                  md: "10px 30px",
+                  sm: "10px 30px",
+                  xs: "10px 15px",
+                },
               }}
               onClick={() => setSelectedProject(project.id)}
             >
@@ -151,7 +205,7 @@ export default function Projects() {
                 <Typography
                   sx={{
                     fontFamily: "Playfair Display",
-                    fontSize: "40px",
+                    fontSize: { lg: "40px", md: "40px", xs: "24px" },
                     fontWeight: 700,
                     textAlign: "left",
                     color:
@@ -165,7 +219,7 @@ export default function Projects() {
                 <Typography
                   sx={{
                     fontFamily: "Roboto Slab",
-                    fontSize: "20px",
+                    fontSize: { lg: "20px", md: "20px", xs: "15px" },
                     fontWeight: 500,
                     textAlign: "left",
                   }}
@@ -177,7 +231,7 @@ export default function Projects() {
                 <Typography
                   sx={{
                     fontFamily: "Roboto Slab",
-                    fontSize: "20px",
+                    fontSize: { lg: "20px", md: "20px", xs: "16px" },
                     fontWeight: 400,
                     color: "rgba(218, 183, 216, 1)",
                     textAlign: "left",

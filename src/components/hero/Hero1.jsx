@@ -1,7 +1,9 @@
 import React from "react";
 import "./Hero1.css";
 import bg from "../../assets/bghero.svg";
-
+import ABOUT from "../about/about.jsx";
+import FOOTER from "../footer/footer.jsx";
+import PROJECTS from "../Projects/index.jsx";
 export default function Hero1() {
   return (
     <div className="heroDIV">
@@ -15,7 +17,7 @@ export default function Hero1() {
           <a className="rightnavoptions" href="">
             about
           </a>
-          <a href="">
+          <a href="" className="contactbtnDesktop">
             <button className="contactbtn cssbuttons">contact</button>
           </a>
         </div>
@@ -30,7 +32,11 @@ export default function Hero1() {
           &#x2022;
           <div>Crafting Experiences</div>
         </div>
+        <button className="contactbtnPhone">CONTACT</button>
       </div>
+      {/* <PROJECTS />
+      <ABOUT />
+      <FOOTER /> */}
     </div>
   );
 }

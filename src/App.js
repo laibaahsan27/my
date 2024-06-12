@@ -7,9 +7,10 @@ import PROJECTS from './components/Projects/index.jsx'
 function App() {
   return (
     <div>
+
       <HERO />
       <PROJECTS />
-      <ABOUT />
+      {/* <ABOUT /> */}
       <FOOTER />
     </div>
   );

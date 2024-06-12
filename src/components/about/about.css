@@ -2,14 +2,12 @@
   position: absolute;
   left: 0;
   width: 100%;
-  /* height: auto; */
   object-fit: cover;
   z-index: -1;
 }
 .aboutContentMainDiv {
   position: relative;
   width: 100%;
-  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,6 +27,12 @@
   display: flex;
   flex-direction: column;
   margin-top: 220px;
+  align-items: center;
+}
+.aboutLine1-div {
+  width: 100%;
+  display: flex;
+  justify-content: left;
 }
 .aboutLine1 {
   width: 250px;
@@ -70,6 +74,12 @@
   gap: 200px;
   margin: 0;
 }
+.aboutLine3-first-div,
+.aboutLine3-second-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .aboutLine3-first {
   width: 230px;
   font-family: "Roboto Slab";
@@ -102,6 +112,11 @@
   padding-top: 10px;
   margin-bottom: 0;
 }
+.aboutLine5-div {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
 .aboutLine5 {
   font-family: "Roboto Slab";
   font-size: 20px;
@@ -113,6 +128,80 @@
   padding-left: 270px;
   padding-top: 10px;
 }
+.codingSpreesImg,
+.resumeImg {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100px;
+}
+.underlineText,
+.underlineText1,
+.underlineText2,
+.underlineText3 {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.underlineText3 img,
+.meImg,
+.quatroImg,
+.codingSpreesImg {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  /* max-width: 130px; */
+}
+.underlineText1 img {
+  bottom: -2px;
+}
+.underlineText2 img {
+  bottom: -15px;
+  /* max-width: 80px; */
+}
+.underlineText3 img {
+  bottom: -12px;
+  max-width: 100px;
+}
+.hoverImg {
+  position: absolute;
+  /* width: 900px; */
+  height: auto;
+  /* max-height: 200px; */
+  visibility: hidden;
+  z-index: 1;
+  left: -130px;
+  top: -100px;
+}
+.hoverImg2 {
+  position: absolute;
+  height: auto;
+  visibility: hidden;
+  z-index: 1;
+  left: 0;
+  top: 0px;
+}
+.hoverImg3 {
+  position: absolute;
+  height: auto;
+  visibility: hidden;
+  z-index: 1;
+  left: 0;
+  top: -80px;
+}
+
+.underlineText:hover .hoverImg,
+.underlineText1:hover .hoverImg2,
+.underlineText2:hover .hoverImg3 {
+  visibility: visible;
+}
+.underlineText:hover img,
+.underlineText1:hover img,
+.underlineText2:hover img {
+  visibility: hidden;
+}
 @media only screen and (max-width: 1290px) {
   .aboutLinesMain {
     margin-top: 200px;
@@ -120,7 +209,6 @@
   .aboutLine1 {
     padding-left: 160px;
   }
-
   .aboutLine2 {
     padding-bottom: 0;
     padding-right: 175px;

@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   padding: 15px 30px;
   align-items: center;
@@ -113,4 +113,84 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.1px;
+}
+.contactbtnPhone {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .contactbtnDesktop {
+    display: none;
+  }
+  .herotxt {
+    padding-top: 60%;
+  }
+  .herotext1 {
+    font-size: 64px;
+    font-weight: 700;
+  }
+  .herotext2 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+  }
+  .herotext3 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+  }
+  .contactbtnPhone {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 20px;
+    width: Fixed (363px) px;
+    height: Fixed (46px) px;
+    padding: 12px;
+    gap: 8px;
+    border-radius: 10px;
+    opacity: 0px;
+    border: none;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 21.74px;
+    letter-spacing: -0.04em;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .navCON {
+    padding: 15px;
+  }
+  .contactbtnDesktop {
+    display: none;
+  }
+  .herotxt {
+    padding-top: 80%;
+    padding-left: 15px;
+    gap: 10px;
+    padding-right: 15px;
+  }
+  .herotext1 {
+    font-size: 64px;
+    font-weight: 700;
+  }
+  .herotext2 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+  }
+  .herotext3 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    gap: 2px;
+    padding-left: 0;
+  }
+  .contactbtnPhone {
+    margin-right: 0px;
+    margin-top: 10px;
+  }
 }
