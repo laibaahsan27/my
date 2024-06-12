@@ -43,7 +43,7 @@ export default function footer() {
               }
             }
           >
-            <Bar />
+            {/* <Bar /> */}
           </div>
           <div
             className="textAlongScroller"
@@ -130,7 +130,7 @@ export default function footer() {
           </a>
         </div>
         <div className="footerBottom2">
-          © 2023 Laiba Ahsan.{" "}
+          © 2024 Laiba Ahsan.{" "}
           <span className="rightsRe">All rights reserved.</span>
         </div>
         <div className="footerBottom3">

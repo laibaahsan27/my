@@ -202,6 +202,9 @@
 .underlineText2:hover img {
   visibility: hidden;
 }
+.aboutPhn {
+  display: none;
+}
 @media only screen and (max-width: 1290px) {
   .aboutLinesMain {
     margin-top: 200px;
@@ -226,5 +229,73 @@
   .aboutLine4 {
     margin: 0;
     padding-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .aboutdesktop {
+    display: none;
+  }
+  .aboutPhn {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    position: relative;
+  }
+  .aboutBgImg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    height: auto;
+  }
+  .aboutphnLaiba {
+    font-family: "Playfair Display";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 53.56px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    margin-top: 120px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }
+  .aboutPhnHI {
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.38px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    margin: 0;
+  }
+  .aboutPhnHI span {
+    color: white;
+  }
+  .viwResumeBtn {
+    width: Fixed (324px) px;
+    height: Fixed (51px) px;
+    top: 1102px;
+    left: 31px;
+    padding: 7px 10px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 4px;
+    opacity: 0px;
+    background: rgba(194, 128, 190, 1);
+    border: 4px solid rgba(171, 103, 167, 1);
+    box-shadow: 3px 3px 0px 0px rgba(151, 72, 147, 1);
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.38px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
   }
 }
