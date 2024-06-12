@@ -275,8 +275,8 @@
     color: white;
   }
   .viwResumeBtn {
-    width: Fixed (324px) px;
-    height: Fixed (51px) px;
+    width: 324px;
+    height: 51px;
     top: 1102px;
     left: 31px;
     padding: 7px 10px;

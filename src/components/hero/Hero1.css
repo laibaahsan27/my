@@ -142,8 +142,8 @@
     display: flex;
     margin-right: 30px;
     margin-top: 20px;
-    width: Fixed (363px) px;
-    height: Fixed (46px) px;
+    width: 363px;
+    height: 46px;
     padding: 12px;
     gap: 8px;
     border-radius: 10px;
