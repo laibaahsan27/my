@@ -54,7 +54,7 @@ export default function Hero1({ scrollToProjects, scrollToAbout }) {
         <button className="contactbtnPhone" onClick={handleContactClick}>
           CONTACT
         </button>
-        <button>Hi</button>
+        <button className="contactbtnPhone">Hi</button>
       </div>
     </div>
   );
