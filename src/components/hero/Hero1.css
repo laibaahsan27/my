@@ -147,7 +147,7 @@
     padding: 12px;
     gap: 8px;
     border-radius: 10px;
-    opacity: 0px;
+    /* opacity: 0px; */
     border: none;
     color: white;
     background-color: black;
