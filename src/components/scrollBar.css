@@ -1,17 +1,16 @@
 .marquee {
   position: relative;
-  width: 40%;
+  width: 50%;
   white-space: nowrap;
   overflow: hidden;
   z-index: 2;
   display: flex;
   border: 3px solid rgba(218, 183, 216, 1);
   border-radius: 40px;
+  box-sizing: border-box; /* Ensure padding is included in the total width/height */
 }
 
 .marquee__inner {
-  padding-top: 12px;
-  animation: marquee 30s linear infinite;
   display: flex;
   justify-content: space-evenly;
 }
@@ -19,7 +18,6 @@
 .marquee__item {
   display: inline-block;
   padding: 0 2rem;
-  width: 10%;
   font-family: "Roboto Slab";
   font-size: 48px;
   font-weight: 500;
@@ -28,54 +26,40 @@
   text-align: left;
   color: rgba(218, 183, 216, 1);
 }
-.marquee__image {
-  color: rgba(218, 183, 216, 1);
-}
+
 @keyframes marquee {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
+
 @media (max-width: 480px) {
   .marquee__item {
     font-size: 26px;
+    padding: 0 1rem;
   }
   .marquee {
-    height: 60px;
+    height: auto; /* Make it responsive */
+    width: 100%;
   }
   .marquee__image {
     margin-top: 5px;
   }
-  .marquee__inner {
-    padding-top: 0px;
-    animation: marquee 30s linear infinite;
-    display: flex;
-    justify-content: space-evenly;
-  }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .marquee__item {
     font-size: 26px;
+    padding: 0 1rem;
   }
   .marquee {
-    height: 50px;
+    height: auto; /* Make it responsive */
+    width: 100%;
   }
-  .marquee__image {
-    margin-top: 5px;
-  }
-  .black-bar {
-    transform: rotate(-5deg);
-    height: 50px;
-  }
-  .marquee__item {
-    font-size: 26px;
-  }
-  .marquee {
-    height: 50px;
-  }
+
   .marquee__image {
     margin-top: 5px;
   }
