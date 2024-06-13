@@ -9,6 +9,7 @@ import mail from "../../assets/mail.svg";
 import github from "../../assets/github.svg";
 import heart from "../../assets/footerHeart.svg";
 import Bar from "../scrollBar";
+import ScrollBarOne from "../ScrollBarOne";
 
 export default function footer({ scrollToProjects, scrollToAbout }) {
   // https://www.linkedin.com/in/sanya031malhotra/
@@ -47,7 +48,7 @@ export default function footer({ scrollToProjects, scrollToAbout }) {
               }
             }
           >
-            {/* <Bar /> */}
+           <ScrollBarOne/>
           </div>
           <div
             className="textAlongScroller"
