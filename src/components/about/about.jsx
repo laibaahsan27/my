@@ -6,7 +6,9 @@ import me from "../../assets/me.svg";
 import resume from "../../assets/resume.svg";
 import quatro from "../../assets/quatro.svg";
 import codingSpreesImg from "../../assets/myCodingSpreeImg.svg";
+import codingSpreesImgPhone from "../../assets/mycodingspreeAboutPhn.svg";
 import meImg from "../../assets/myImg.svg";
+import myPhotoAbout from "../../assets/myPhotoAbout.svg";
 import quatroImg from "../../assets/quatroSticker.svg";
 import "./about.css";
 import arrow1 from "../../assets/arrowsAbout/arrow1.svg";
@@ -115,14 +117,14 @@ export default function About() {
           AHSAN
         </p>
         <img
-          src={meImg}
+          src={myPhotoAbout}
           alt=""
           style={{
-            width: "159.96px",
-            height: "auto",
+            // width: "159.96px",
+            // height: "auto",
             top: "90px",
             position: "absolute",
-            right: "20px",
+            right: "15px",
           }}
         />
         <img
@@ -131,7 +133,7 @@ export default function About() {
           style={{
             width: "150px",
             height: "auto",
-            paddingLeft: "55px",
+            paddingLeft: "20px",
             marginTop: "10px",
           }}
         />
@@ -180,7 +182,7 @@ export default function About() {
             src={arrow3}
             alt=""
             style={{
-              width: "150px",
+              width: "130px",
               height: "auto",
               marginTop: "120px",
               position: "relative",
@@ -188,21 +190,27 @@ export default function About() {
             }}
           />
           <img
-            src={codingSpreesImg}
+            src={codingSpreesImgPhone}
             alt=""
             style={{
-              width: "200px",
-              height: "auto",
+              // width: "200px",
+              // height: "auto",
               position: "absolute",
-              top: "40px",
-              left: "25%",
+              top: "20px",
+              left: "20%",
             }}
           />
         </div>
         <p className="aboutPhnHI">
           Chicken wings fuel my fun <br /> <b>coding sprees</b>
         </p>
-        <button className="viwResumeBtn" onClick={handleButtonClick}>
+        <button
+          className="viwResumeBtn"
+          onClick={handleButtonClick}
+          style={{
+            marginTop: "60px",
+          }}
+        >
           <img src={flower} alt="" />
           VIEW RESUME
           <img src={flower} alt="" />

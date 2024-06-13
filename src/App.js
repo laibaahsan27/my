@@ -26,7 +26,7 @@ function App() {
       <div ref={aboutRef}>
         <ABOUT />
       </div>
-      <FOOTER />
+      <FOOTER scrollToProjects={scrollToProjects} scrollToAbout={scrollToAbout} />
     </div>
   );
 }

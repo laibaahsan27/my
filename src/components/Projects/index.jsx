@@ -253,7 +253,7 @@ export default function Projects() {
                       fontFamily: "Roboto Slab",
                       fontSize: "16px",
                       fontWeight: 400,
-                      color: "rgba(218, 183, 216, 1)",
+                      color: "#603784",
                       textAlign: "left",
                       display: "flex",
                       alignItems: "center",
@@ -263,7 +263,7 @@ export default function Projects() {
                     View live Project{" "}
                     <ArrowOutwardIcon
                       fontSize="small"
-                      sx={{ color: "rgba(218, 183, 216, 1)" }}
+                      sx={{ color: "#603784" }}
                     />
                   </Typography>
                 </a>

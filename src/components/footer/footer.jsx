@@ -10,7 +10,11 @@ import github from "../../assets/github.svg";
 import heart from "../../assets/footerHeart.svg";
 import Bar from "../scrollBar";
 
-export default function footer() {
+export default function footer({ scrollToProjects, scrollToAbout }) {
+  // https://www.linkedin.com/in/sanya031malhotra/
+  const handleSanyaClick = () => {
+    window.location.href = "https://www.linkedin.com/in/sanya031malhotra/";
+  };
   return (
     <div
       className="footerMain"
@@ -122,10 +126,10 @@ export default function footer() {
         // }}
       >
         <div className="footerBottom1">
-          <a href="#work" className="wavy-link">
+          <a href="#work" className="wavy-link" onClick={scrollToProjects}>
             WORK
           </a>
-          <a href="#about" className="wavy-link">
+          <a href="#about" className="wavy-link" onClick={scrollToAbout}>
             ABOUT
           </a>
         </div>
@@ -133,7 +137,7 @@ export default function footer() {
           © 2024 Laiba Ahsan.{" "}
           <span className="rightsRe">All rights reserved.</span>
         </div>
-        <div className="footerBottom3">
+        <div className="footerBottom3" onClick={handleSanyaClick}>
           Designed by sanya{" "}
           <img src={heart} alt="" style={{ height: "20px" }} />
         </div>
