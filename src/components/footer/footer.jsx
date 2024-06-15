@@ -41,19 +41,17 @@ export default function footer({ scrollToProjects, scrollToAbout }) {
           <div className="textAlongScroller">Mastering,</div>
           <div
             className="scroolerDiv"
-            style={
-              {
-                // paddingTop: "15px",
-                // width: "130%",
-              }
-            }
+            style={{
+              paddingTop: "15px",
+              // width: "130%",
+            }}
           >
-           <ScrollBarOne/>
+            <ScrollBarOne />
           </div>
           <div
             className="textAlongScroller"
             style={{
-              paddingTop: "15px",
+              paddingTop: "5px",
             }}
           >
             And constantly expanding with

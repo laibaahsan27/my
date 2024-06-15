@@ -95,7 +95,7 @@ export default function Projects() {
       sx={{
         backgroundColor: "rgba(137, 104, 166, 1)",
         display: "flex",
-        pt: 5,
+        pt: { lg: 14, xs: 8 },
         pb: 10,
         flexDirection: { lg: "row", md: "column", sm: "column", xs: "column" },
       }}

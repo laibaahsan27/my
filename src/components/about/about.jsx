@@ -138,9 +138,8 @@ export default function About() {
           }}
         />
         <p className="aboutPhnHI">
-          Hi, this is <b>me</b> ! I am a front-end developer and a 3rd year
-          computer science student.{" "}
-          <span> Currently interning at OPTIGRIT</span>{" "}
+          Hi, this is <b>me</b> ! I am a developer and a 3rd year computer
+          science student. <span> Currently interning at OPTIGRIT</span>{" "}
         </p>
         <div
           style={{
