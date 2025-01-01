@@ -6,7 +6,7 @@ import JM from "../../assets/projects/JM.svg";
 import PartyPals from "../../assets/projects/PartyPals.svg";
 import Prateek from "../../assets/projects/Prateek.svg";
 import Quatro from "../../assets/projects/quatro.svg";
-
+import WWC from "../../assets/projects/WWC.svg";
 import DailyCastPhone from "../../assets/projects/DailyCastPhone.svg";
 import Drphone from "../../assets/projects/Drphone.svg";
 import JMphone from "../../assets/projects/JMphone.svg";
@@ -33,6 +33,17 @@ export default function Projects() {
     },
     {
       id: 2,
+      name: "WWC NGO",
+      tech: "MERN, CSS, Material UI",
+      link: "https://www.warriorswithoutcause.org/",
+      image: WWC,
+      imagePhn: WWC,
+      bgColor:
+        "radial-gradient(85.45% 85.45% at 50% 50%, #FFD1EB 0%, #C30178 100%)",
+      type: "Service",
+    },
+    {
+      id: 3,
       name: "Dr Akansha Agarwal",
       tech: "Next.js, MongoDB, Express.js, Node.js, Material UI, CSS ",
       link: "https://dr-sandy.vercel.app/",
@@ -43,7 +54,7 @@ export default function Projects() {
       type: "Service",
     },
     {
-      id: 3,
+      id: 4,
       name: "Jagriti Malhotra",
       tech: "HTML, CSS, JavaScript",
       link: "https://www.jagritimalhotra.com/",
@@ -54,7 +65,7 @@ export default function Projects() {
       type: "Portfolio",
     },
     {
-      id: 4,
+      id: 5,
       name: "Quatro",
       tech: "React.js, CSS",
       link: "https://www.quatro.in/",
@@ -65,7 +76,7 @@ export default function Projects() {
       type: "Business",
     },
     {
-      id: 5,
+      id: 6,
       name: "Prateek Nikam",
       tech: "React.js, CSS",
       link: "https://my-app-six-inky.vercel.app/",
@@ -76,7 +87,7 @@ export default function Projects() {
       type: "Portfolio",
     },
     {
-      id: 6,
+      id: 7,
       name: "WeatherCast",
       tech: "React.js , CSS, API Integration",
       link: "https://weather-sooty-tau.vercel.app/",
@@ -149,10 +160,6 @@ export default function Projects() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          // pl: { lg: "7%", md: "0%" },
-          // width: "100%",
-          // justifyContent: "center",
-          // margin: { lg: "0 auto", md: "0" },
           margin: { lg: "0 50px", md: "0" },
           justifyContent: "center",
         }}
@@ -162,8 +169,11 @@ export default function Projects() {
             fontFamily: "Playfair Display",
             fontSize: "100px",
             fontWeight: 700,
-            pb: 3,
+            pb: 0,
             display: { lg: "flex", md: "none", sm: "none", xs: "none" },
+            height: "125px",
+            top: "-40px",
+            position: "relative",
           }}
         >
           PROJECTS
@@ -171,7 +181,7 @@ export default function Projects() {
         <Box
           sx={{
             marginTop: { lg: "0", md: "100px", sm: "100px", xs: "50px" },
-            maxHeight: { lg: "450px", md: "auto" },
+            maxHeight: { lg: "490px", md: "auto" },
             overflowY: "auto",
             scrollbarWidth: "none",
             "&::-webkit-scrollbar": {

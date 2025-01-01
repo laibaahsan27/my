@@ -57,7 +57,7 @@
   justify-content: right;
 }
 .aboutLine2 {
-  width: 200px;
+  width: 220px;
   font-family: "Roboto Slab";
   font-size: 20px;
   font-weight: 500;
@@ -65,7 +65,7 @@
   letter-spacing: -0.005em;
   text-align: left;
   margin: 0;
-  padding-right: 200px;
+  padding-right: 180px;
   padding-bottom: 50px;
 }
 

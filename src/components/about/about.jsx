@@ -19,7 +19,7 @@ import flower from "../../assets/arrowsAbout/viewResumeFlower.svg";
 export default function About() {
   const handleButtonClick = () => {
     window.open(
-      "https://drive.google.com/file/d/17GMyU-JtRdOXkdOrGt_twHjI-bmbaA00/view?usp=sharing",
+      "https://drive.google.com/file/d/1ByzDGYOYqIs2CKKJIn6LV2WWMNdIEzo4/view?usp=sharing",
       "_blank"
     );
   };
@@ -37,7 +37,9 @@ export default function About() {
             </div>
 
             <div className="aboutLine2-div">
-              <p className="aboutLine2">Currently interning at OPTIGRIT</p>
+              <p className="aboutLine2">
+                2025 fresher @SHELL as Associate IT Eng
+              </p>
             </div>
 
             <div className="aboutLine3">
@@ -139,7 +141,7 @@ export default function About() {
         />
         <p className="aboutPhnHI">
           Hi, this is <b>me</b> ! I am a developer and a 3rd year computer
-          science student. <span> Currently interning at OPTIGRIT</span>{" "}
+          science student. <span> Associate IT Eng @SHELL</span>{" "}
         </p>
         <div
           style={{
